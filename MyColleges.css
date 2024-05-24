@@ -1,0 +1,444 @@
+.Grid2 {
+  background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94));
+  /* Modal Content Box */
+  /* Add Animation */
+  /* The Close Button */
+  /* Course display styling */
+  /* Keyframes for the slide-down animation */
+}
+.Grid2 .VerticalContainer {
+  background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94), rgb(29, 26, 57));
+  width: 160px;
+  height: 1000px;
+  position: fixed;
+}
+.Grid2 .VerticalContainer img {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.Grid2 .VerticalContainer button {
+  font-size: medium;
+  background-color: rgba(144, 38, 112, 0);
+}
+.Grid2 .VerticalContainer button:hover {
+  background-color: rgb(217, 217, 217);
+  color: black;
+}
+.Grid2 .VerticalContainer button:hover img {
+  filter: brightness(0);
+  cursor: pointer;
+}
+.Grid2 .VerticalContainer .Profile, .Grid2 .VerticalContainer .Colleges, .Grid2 .VerticalContainer .Scholarships {
+  width: 100%;
+  background-color: rgb(217, 217, 217);
+  border: none;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.Grid2 .VerticalContainer .Profile {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.Grid2 .VerticalContainer .Profile img {
+  margin-right: 11px;
+  margin-bottom: -10px;
+  width: 60px;
+  height: 81px;
+}
+.Grid2 .VerticalContainer .Colleges {
+  padding-top: 10px;
+  background-color: rgba(144, 38, 112, 0);
+  color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.Grid2 .VerticalContainer .Colleges img {
+  margin-right: 11px;
+  margin-bottom: -10px;
+  width: 60px;
+  height: 81px;
+}
+.Grid2 .VerticalContainer .Scholarships {
+  padding-top: 10px;
+  background-color: rgba(144, 38, 112, 0);
+  color: rgb(217, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.Grid2 .VerticalContainer .Scholarships img {
+  margin-right: 11px;
+  margin-bottom: -10px;
+  width: 60px;
+  height: 81px;
+}
+.Grid2 .VerticalContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Grid2 .VerticalContainer .Notifications {
+  margin-left: 38px;
+  border: none;
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Grid2 .VerticalContainer .Notifications img {
+  margin-left: 2px;
+  width: 50px;
+  height: 40px;
+}
+.Grid2 .VerticalContainer .Notifications:hover {
+  color: rgba(253, 253, 253, 0.697);
+  background-color: rgba(155, 97, 22, 0);
+}
+.Grid2 .VerticalContainer .Logout {
+  border: none;
+  margin-left: 50px;
+  margin-top: 60px;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+.Grid2 .VerticalContainer .Logout img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.Grid2 .VerticalContainer .Logout:hover {
+  color: rgba(211, 211, 211, 0.566);
+  background-color: rgba(155, 97, 22, 0);
+}
+.Grid2 .VerticalContainer .Notifications:hover img,
+.Grid2 .VerticalContainer .Logout:hover img {
+  filter: invert(30%);
+}
+.Grid2 .VerticalContainer .notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Grid2 .VerticalContainer .notification-overlay .notification-content {
+  height: 500px;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.448);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+.Grid2 .VerticalContainer .notification-overlay .notification-content h2 {
+  margin-bottom: 10px;
+}
+.Grid2 .VerticalContainer .notification-overlay .notification-content button {
+  margin-top: 360px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #eeeeee;
+  color: rgb(3, 3, 3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Grid2 .VerticalContainer .notification-overlay .notification-content button:hover {
+  background-color: rgba(255, 255, 255, 0.4235294118);
+}
+.Grid2 .HorizontalContainer {
+  background-color: rgb(217, 217, 217);
+  padding: 10px;
+  width: 1546px;
+  height: 360px;
+  margin-left: 160px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.Grid2 .HorizontalContainer .MiniTabs {
+  margin-top: 20px;
+  margin-left: 70px;
+}
+.Grid2 .HorizontalContainer .MiniTabs button {
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+  border: 0px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+.Grid2 .HorizontalContainer .MiniTabs button:hover {
+  color: rgba(0, 0, 0, 0.388);
+}
+.Grid2 .HorizontalContainer .MyColleges {
+  text-decoration: underline;
+  text-decoration-color: rgb(69, 25, 82);
+}
+.Grid2 .HorizontalContainer button.MyColleges:hover {
+  color: rgb(0, 0, 0);
+}
+.Grid2 .HorizontalContainer .ProfilePrompt {
+  margin-top: 30px;
+  margin-left: 110px;
+}
+.Grid2 .HorizontalContainer .ProfilePrompt h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.Grid2 .HorizontalContainer .ProfilePrompt p {
+  font-size: 20px;
+  margin-left: 50px;
+}
+.Grid2 .HorizontalContainer .NameDis {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.Grid2 .HorizontalContainer .NameDis h1 {
+  margin-top: 40px;
+  margin-left: 40px;
+  font-size: 40px;
+  font-weight: 500;
+}
+.Grid2 .HorizontalContainer .NameDis h1 p {
+  font-weight: 300;
+  font-size: 30px;
+}
+.Grid2 .HorizontalContainer .NameDis img {
+  height: 170px;
+  width: 170px;
+}
+.Grid2 .HorizontalContainerBOTTOM {
+  overflow-y: auto;
+  margin-top: 10px;
+  background-color: rgb(217, 217, 217);
+  padding: 10px;
+  width: 1546px;
+  height: 411px;
+  margin-left: 160px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mycollege-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 2px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  height: 150px;
+  max-width: 1200px;
+  margin-top: 20px;
+  margin-left: 140px;
+  overflow: hidden;
+  min-height: 150px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mycollege-logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mycollege-details {
+  margin-top: 1px;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mycollege-details h5 {
+  position: absolute;
+  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mycollege-details p {
+  position: absolute;
+  margin-top: 35px;
+  font-size: 15px;
+}
+.Grid2 .HorizontalContainerBOTTOM .mybuttons-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+.Grid2 .HorizontalContainerBOTTOM .myadd-to-colleges,
+.Grid2 .HorizontalContainerBOTTOM .myview {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+.Grid2 .HorizontalContainerBOTTOM .myadd-to-colleges:hover,
+.Grid2 .HorizontalContainerBOTTOM .myview:hover {
+  opacity: 0.8;
+}
+.Grid2 .HorizontalContainerBOTTOM .Status {
+  margin-left: 20px;
+  margin-top: 60px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+.Grid2 .HorizontalContainerBOTTOM .Status:hover {
+  opacity: 0.8;
+}
+.Grid2 .HorizontalContainerBOTTOM .myview {
+  margin-left: 700px;
+  background-color: rgb(69, 25, 82);
+  color: white;
+  margin-bottom: 4.5rem;
+}
+.Grid2 .HorizontalContainerBOTTOM .Status {
+  background-color: rgb(15, 142, 53);
+  color: white;
+  margin-bottom: 4.5rem;
+}
+.Grid2 .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Grid2 .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.Grid2 .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.Grid2 .close:hover,
+.Grid2 .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Grid2 .display-course {
+  position: relative;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.Grid2 .form {
+  position: relative;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 4px;
+}
+.Grid2 .submit-button {
+  position: absolute;
+  left: 2;
+  top: 90px;
+  padding: 8px;
+  background-color: rgb(152, 93, 170);
+  border-radius: 10px;
+  height: 30px;
+  font-weight: bold;
+}
+.Grid2 .apply-button {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding: 8px;
+  background-color: rgb(152, 93, 170);
+  border-radius: 10px;
+  height: 30px;
+  font-weight: bold;
+}
+.Grid2 .container_submission {
+  position: relative;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.Grid2 .checkmark {
+  color: green; /* Green color for the checkmark */
+  margin-left: 8px; /* Space between the document name and the checkmark */
+}
+.Grid2 .success-message {
+  position: fixed; /* Fixed position to make it visible above all other content */
+  top: 20%; /* Position from the top of the viewport */
+  left: 50%; /* Centering from the left */
+  transform: translateX(-50%); /* Translate to perfectly center horizontally */
+  width: auto; /* Auto width based on content size */
+  max-width: 90%; /* Maximum width to ensure it doesn't span the entire width on larger screens */
+  padding: 20px; /* Padding around the text */
+  background-color: #4CAF50; /* Green background to signify success */
+  color: white; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for 3D effect */
+  z-index: 1050; /* High z-index to ensure visibility above other elements */
+  animation: slideDown 0.5s ease-out forwards; /* Animation for sliding down */
+}
+@keyframes slideDown {
+  from {
+    top: 0; /* Start from top of the viewport */
+    opacity: 0; /* Start with no opacity */
+  }
+  to {
+    top: 20%; /* End at final position */
+    opacity: 1; /* Fully visible */
+  }
+}/*# sourceMappingURL=MyColleges.css.map */
