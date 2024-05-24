@@ -562,3 +562,11 @@ img {
     }
 }
 
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.container, .backgroundDiv {
+    overflow-x: hidden;
+}

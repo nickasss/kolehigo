@@ -14,6 +14,7 @@ import Scholarships from './Components/Dashboard/Scholarships/Scholarships'
 import Login from './Components/Login/Login'
 import Register from './Components/Register/Register'
 //TABS
+import Compare from './Components/Dashboard/Colleges/Compare/Compare.jsx'
 //Under view tab for colleges
 import CollegeView from './Components/Dashboard/Colleges/CollegeView/CollegeView'
 
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
     path: '/EducationalBackground',
     element: <div><EducationalBackground/></div>
   },
+  {
+    path: '/Compare',
+    element: <div><Compare/></div>
+  },
+
 ])
 
 

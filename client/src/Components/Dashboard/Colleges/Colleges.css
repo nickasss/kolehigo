@@ -1,5 +1,7 @@
 .Grid0 {
   background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94));
+  /* Adjust button hover effects */
+  /* Add this to your Colleges.scss file */
 }
 .Grid0 .VerticalContainer {
   background-image: linear-gradient(rgb(102, 37, 73), rgb(102, 37, 73), rgb(102, 37, 73));
@@ -34,7 +36,7 @@
 }
 .Grid0 .VerticalContainer .Profile {
   background-color: rgba(255, 255, 255, 0);
-  margin-top: 40px;
+  margin-top: 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,46 +124,6 @@
   color: rgba(211, 211, 211, 0.566);
   background-color: rgba(155, 97, 22, 0);
 }
-.Grid0 .VerticalContainer .Notifications:hover img,
-.Grid0 .VerticalContainer .Logout:hover img {
-  filter: invert(30%);
-}
-.Grid0 .VerticalContainer .notification-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.Grid0 .VerticalContainer .notification-overlay .notification-content {
-  height: 500px;
-  width: 1000px;
-  background-color: rgba(0, 0, 0, 0.448);
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  color: aliceblue;
-}
-.Grid0 .VerticalContainer .notification-overlay .notification-content h2 {
-  margin-bottom: 10px;
-}
-.Grid0 .VerticalContainer .notification-overlay .notification-content button {
-  margin-top: 360px;
-  padding: 8px 20px;
-  border: none;
-  background-color: #eeeeee;
-  color: rgb(3, 3, 3);
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.Grid0 .VerticalContainer .notification-overlay .notification-content button:hover {
-  background-color: rgba(255, 255, 255, 0.4235294118);
-}
 .Grid0 .HorizontalContainer {
   background-image: linear-gradient(rgb(73, 0, 94), rgb(102, 37, 73), rgb(102, 37, 73));
   margin-left: 160px;
@@ -215,7 +177,7 @@
   position: absolute;
 }
 .Grid0 .HorizontalContainer1 {
-  width: 1547px;
+  width: 1367px;
   height: 170px;
   background-color: rgb(217, 217, 217);
   margin-left: 160px;
@@ -265,13 +227,14 @@
   font-size: 17px;
 }
 .Grid0 .HorizontalContainer1 .Promoted-colleges .college .Left p {
+  color: black;
   margin-top: 3px;
-  margin-left: 100px;
+  margin-left: 90px;
   font-size: 13px;
   font-weight: 300;
 }
 .Grid0 .HorizontalContainer1 .Promoted-colleges .college .Right {
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 10px;
 }
 .Grid0 .HorizontalContainer1 .Promoted-colleges .college .Right .Add-colleges {
@@ -312,8 +275,8 @@
   position: absolute;
   margin-top: 412px;
   margin-left: 160px;
-  width: 1547px;
-  height: 369px;
+  width: 1367px;
+  height: 328px;
   overflow-x: hidden;
   overflow-y: auto;
   position: absolute;
@@ -337,6 +300,7 @@
 }
 .Grid0 .HorizontalContainer2 .college-item {
   display: flex;
+  margin-left: 150px;
   align-items: center;
   justify-content: space-between;
   background-color: #fff;
@@ -371,7 +335,6 @@
   cursor: pointer;
   font-weight: bold;
   white-space: nowrap;
-  margin-right: 5px;
 }
 .Grid0 .HorizontalContainer2 .add-to-colleges:hover,
 .Grid0 .HorizontalContainer2 .view:hover {
@@ -380,6 +343,7 @@
 .Grid0 .HorizontalContainer2 .add-to-colleges {
   background-color: rgb(29, 26, 57);
   color: white;
+  margin-left: 555px;
 }
 .Grid0 .HorizontalContainer2 .view {
   background-color: rgb(69, 25, 82);
@@ -451,6 +415,7 @@
   background-color: #4CAF50; /* Green background to indicate success */
   color: white; /* White text color for contrast */
   cursor: not-allowed; /* Show that the button is disabled */
+  margin-left: 555px;
 }
 .Grid0 .HorizontalContainer2 .added-to-colleges:hover {
   background-color: #4CAF50; /* Keep the same color even on hover */
@@ -470,7 +435,207 @@
 .Grid0 .HorizontalContainer2 .added-to-colleges:hover {
   opacity: 0.8;
 }
-.Grid0 .HorizontalContainer2 .popup-message {
+.Grid0 .college-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 160px;
+  max-width: calc(100% - 160px);
+  box-sizing: border-box;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 15px;
+}
+.Grid0 .college-list .label-container {
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
+  padding: 20px; /* Adds some padding around the content */
+  width: 200px;
+  background-color: gray; /* Extra space on top */
+  border-radius: 10px;
+}
+.Grid0 .college-list .label-container > div {
+  margin: 10px; /* Adds space between the rows of checkboxes */
+}
+.Grid0 .college-list .button-container {
+  display: flex;
+  justify-content: center; /* Center the button horizontally */
+  margin-top: 10px; /* Space above the button */
+}
+.Grid0 .college-list .toggle-filters-button {
+  background-color: #451952; /* Purple background */
+  color: white; /* White text for contrast */
+  border: none; /* No border for a cleaner look */
+  padding: 8px 16px; /* Smaller padding to reduce the size */
+  font-size: 14px; /* Smaller font size */
+  border-radius: 4px; /* Slightly rounded corners */
+  cursor: pointer; /* Cursor indicates it's clickable */
+  transition: background-color 0.2s ease; /* Smooth transition for hover effect */
+  display: flex;
+  width: 100px;
+  font-size: 12px;
+}
+.Grid0 .college-list .toggle-filters-button:hover {
+  background-color: #451952; /* A lighter purple when hovered */
+}
+.Grid0 .college-list .Apply-filters {
+  background-color: #451952; /* A shade of purple */
+  position: relative;
+  color: white; /* White text color for contrast */
+  border: none; /* No border */
+  padding: 10px 10px; /* Top/bottom and left/right padding */
+  font-size: 12px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor indicates it's clickable */
+  margin-top: 10px; /* Space above the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.Grid0 .college-list .Apply-filters:hover {
+  background-color: #7c2de9; /* Lighter purple when hovered */
+}
+.Grid0 .college-list h5 {
+  font-size: 20px;
+}
+.Grid0 .college-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 2px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+  width: 70rem;
+  max-width: 100%;
+}
+.Grid0 .college-logo {
+  flex-shrink: 0;
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.Grid0 .college-details {
+  flex-grow: 1;
+  min-width: 0;
+  padding-right: 10px;
+}
+.Grid0 .buttons-container {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.Grid0 .add-to-colleges,
+.Grid0 .view {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  margin-right: 5px;
+}
+.Grid0 .add-to-colleges:hover,
+.Grid0 .view:hover {
+  opacity: 0.8;
+}
+.Grid0 .add-to-colleges {
+  background-color: rgb(29, 26, 57);
+  color: white;
+}
+.Grid0 .view {
+  background-color: rgb(69, 25, 82);
+  color: white;
+}
+@media (max-width: 1600px) {
+  .Grid0 .college-list {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .Grid0 .college-item {
+    margin-right: 0;
+  }
+}
+.Grid0 body, .Grid0 html {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.Grid0 .Promoted-colleges .CPU .Left img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+.Grid0 .Promoted-colleges .CPU .Right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+}
+.Grid0 .Promoted-colleges .CPU .Right button {
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.Grid0 .Promoted-colleges .CPU .Right button:last-child {
+  margin-bottom: 0;
+}
+.Grid0 .Promoted-colleges .CPU .Right button.Add-colleges {
+  background-color: rgb(29, 26, 57);
+  color: white;
+}
+.Grid0 .Promoted-colleges .CPU .Right button.view {
+  background-color: rgb(69, 25, 82);
+  color: white;
+}
+.Grid0 .Promoted-colleges .CPU .Right button:hover {
+  opacity: 0.8;
+}
+.Grid0 .Promoted-colleges .CPU .Right button {
+  padding: 6px 15px; /* Reduced padding */
+  font-size: 0.75rem; /* Smaller font size */
+  border-radius: 15px; /* Smaller radius for a less bulky look */
+  margin-bottom: 5px; /* Reduced space between buttons */
+}
+.Grid0 .Promoted-colleges .CPU .Right button:hover {
+  opacity: 0.9; /* Slightly less transparent on hover for better visibility */
+}
+.Grid0 .added-to-colleges {
+  background-color: #4CAF50; /* Green background to indicate success */
+  color: white; /* White text color for contrast */
+  cursor: not-allowed; /* Show that the button is disabled */
+}
+.Grid0 .added-to-colleges:hover {
+  background-color: #4CAF50; /* Keep the same color even on hover */
+  opacity: 1; /* No change in opacity on hover */
+}
+.Grid0 .add-to-colleges,
+.Grid0 .added-to-colleges {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+.Grid0 .add-to-colleges:hover,
+.Grid0 .added-to-colleges:hover {
+  opacity: 0.8;
+}
+.Grid0 .add-to-colleges .popup-message,
+.Grid0 .added-to-colleges .popup-message {
   position: fixed;
   top: 20px;
   left: 50%;
@@ -480,4 +645,39 @@
   padding: 10px 20px;
   border-radius: 10px;
   z-index: 1000;
+  animation: fadeOut 3s forwards;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.application-submitted {
+  position: fixed;
+  top: 20px;
+  left: 50%; /* Center the popup horizontally */
+  transform: translateX(-50%); /* Offset the popup by half its width to truly center it */
+  background-color: #4CAF50; /* Success message background color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 1050;
+  display: block; /* Ensures the element is treated as a block for positioning */
+  animation: slideDown 0.5s ease-out forwards; /* Animation for sliding down */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1; /* Maintain full opacity for 3 seconds */
+  }
+  100% {
+    opacity: 0; /* Fade out over the last 1 second */
+  }
 }/*# sourceMappingURL=Colleges.css.map */

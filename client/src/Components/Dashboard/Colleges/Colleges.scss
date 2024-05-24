@@ -4,122 +4,138 @@
 
   //vertical container
   .VerticalContainer {
-    background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94), rgb(29 26 57));
-    width: 85px;
-    height: 1000px; 
-    position: fixed;
-    
-    img{
-        width: 80px;
-        height: 100px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-    
-    
-    button {
-        font-size: medium;
-        background-color: rgba(144, 38, 112, 0);
-    }
-    
-    button:hover {
-        background-color:   rgb(217 217 217);
-        color: black;
-    
-        img {
-            filter: brightness(0); 
-            cursor: pointer;
-            margin-left: 10px;
-        }
-    }
-
-    .Notifications, .Logout {
-        width: 100%;
-        background-color: rgba(144, 38, 112, 0);  // Transparent background initially
-        color: rgb(217 217 217);  // Light grey text color
+      background-image: linear-gradient(rgb(102 37 73), rgb(102 37 73), rgb(102 37 73));
+      width: 160px;
+      height: 1000px; 
+      position: fixed;
+      
+      img{
+          width: 150px;
+          height: 150px;
+          margin-left: 10px;
+          margin-top: 20px;
+      }
+  
+      button {
+          font-size: medium;
+          background-color: rgba(255, 255, 255, 0);
+      }
+      
+      button:hover {
+          background-color:rgb(217 217 217);
+          color: black;
+      
+          img {
+              filter: brightness(0); 
+              cursor: pointer; 
+          }
+      }
+      .Profile, .Colleges, .Scholarships {
+          width: 100%;
+          background-color: rgb(217 217 217);
+          border: none;
+          cursor: pointer;
+          padding-bottom: 10px;
+      }
+      
+      .Profile {
+          background-color: rgba(255, 255, 255, 0);
+          margin-top: 26px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px;
+          color: rgb(217 217 217);
+  
+          img {
+              filter: invert(100%);
+              margin-right: 11px;
+              margin-bottom: -10px; 
+              width: 60px;
+              height: 81px;
+          }
+  
+      }
+  
+      .Colleges {
+          padding-top: 10px;
+          background-color: rgb(217 217 217);
+          color: rgb(0, 0, 0);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px;
+  
+          img {
+              filter: brightness(0); 
+              margin-right: 11px;
+              margin-bottom: -10px; 
+              width: 60px;
+              height: 81px;
+          }
+      }
+  
+  
+      .Scholarships {
+          padding-top: 10px;
+          background-color: rgba(144, 38, 112, 0);
+          color: rgb(217 217 217);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-size: 20px;
+          img {
+              margin-right: 11px;
+              margin-bottom: -10px; 
+              width: 60px;
+              height: 81px;
+          }
+      }
+  
+      img {
+          object-fit: contain; 
+      }
+      .Notifications{
+        margin-left: 38px;
         border: none;
-        cursor: pointer;
-        padding-bottom: 10px;
+        position: absolute;
+        color: white;
+        font-size: 13px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 12px;  // Matching font size
-
-        img {
-            margin-bottom: -10px;
-            width: 60px;
-            height: 81px;
+        img{
+            margin-left: 2px;
+            width: 50px;
+            height: 40px;
         }
-
         &:hover {
-            background-color: rgb(217 217 217);  // Hover background color
-            color: black;  // Hover text color
-
-            img {
-                filter: brightness(0);
-                cursor: pointer;
-            }
-        }
+            color: rgba(253, 253, 253, 0.697);
+            background-color: rgba(155, 97, 22, 0)
+          }
     }
-
-    .Profile, .Colleges, .Scholarships {
-        width: 100%;
-        background-color: rgb(217 217 217);
+    .Logout{
         border: none;
-        cursor: pointer;
-        padding-bottom: 0px;
-    }
-    
-    .Profile {
-        margin-top: 91px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 15px;
-
-        img {
-            margin-bottom: -10px; 
-            width: 60px;
-            height: 81px;
-        }
-
-    }
-
-    .Colleges {
-
-        background-color: rgba(144, 38, 112, 0); 
-        color: rgb(217 217 217);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 15px;
-
-        img {
-            margin-bottom: -10px; 
-            width: 60px;
-            height: 81px;
-        }
-    }
-
-
-    .Scholarships {
-        background-color: rgba(144, 38, 112, 0);
-        color: rgb(217 217 217);
+        margin-left: 50px;
+        margin-top: 60px;
+        position: absolute;
+        color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 13px;
-        img {
-            margin-bottom: -10px; 
-            width: 60px;
-            height: 81px;
+        img{ 
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
         }
-    }
 
-    img {
-        object-fit: contain; 
+        &:hover {
+            color: rgba(211, 211, 211, 0.566);
+            background-color: rgba(155, 97, 22, 0)
+          }
     }
-}
+  }
 
   .HorizontalContainer {
       background-image: linear-gradient(rgb(73 0 94), rgb(102 37 73), rgb(102 37 73));
@@ -180,7 +196,7 @@
   }
 
   .HorizontalContainer1{
-      width: 1547px;
+      width: 1367px;
       height: 170px;
       background-color: rgb(217 217 217);
       margin-left: 160px;
@@ -234,8 +250,9 @@
                   }
 
                   p{
+                      color: black;
                       margin-top: 3px;
-                      margin-left: 100px;
+                      margin-left: 90px;
                       font-size: 13px;
                       font-weight: 300;
                   }
@@ -289,8 +306,8 @@
       position: absolute;
       margin-top: 412px;
       margin-left: 160px;
-      width: 1547px;
-      height: 369px;
+      width: 1367px;
+      height: 328px;
       overflow-x: hidden; 
       overflow-y: auto;
       position: absolute;
@@ -353,7 +370,6 @@
           cursor: pointer;
           font-weight: bold;
           white-space: nowrap; // Keep the text of the buttons on a single line
-          margin-right: 5px;
           &:hover {
             opacity: 0.8;
           }
@@ -362,11 +378,13 @@
         .add-to-colleges {
           background-color: rgb(29, 26, 57); // Color of the button
           color: white; // Text color of the button
+          margin-left: 555px;
         }
         
         .view {
           background-color: rgb(69, 25, 82); // Color of the button
           color: white; // Text color of the button
+          
         }
         
         @media (max-width: 1600px) {
@@ -451,6 +469,7 @@
         background-color: #4CAF50; /* Green background to indicate success */
         color: white; /* White text color for contrast */
         cursor: not-allowed; /* Show that the button is disabled */
+        margin-left: 555px;
         &:hover {
             background-color: #4CAF50; /* Keep the same color even on hover */
             opacity: 1; /* No change in opacity on hover */
@@ -701,19 +720,49 @@
       opacity: 0.8;
       }
       
-      .popup-message {
-        position: fixed;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        border-radius: 10px;
-        z-index: 1000;
-      }
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
   }
 }
- 
 
+.application-submitted {
+  position: fixed;
+  top: 20px;
+  left: 50%; /* Center the popup horizontally */
+  transform: translateX(-50%); /* Offset the popup by half its width to truly center it */
+  background-color: #4CAF50; /* Success message background color */
+  color: white; /* Text color */
+  padding: 10px 20px;
+  border-radius: 10px;
+  z-index: 1050;
+  display: block; /* Ensures the element is treated as a block for positioning */
+  animation: slideDown 0.5s ease-out forwards; /* Animation for sliding down */
+}
 
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  75% {
+      opacity: 1; /* Maintain full opacity for 3 seconds */
+  }
+  100% {
+      opacity: 0; /* Fade out over the last 1 second */
+  }
+}

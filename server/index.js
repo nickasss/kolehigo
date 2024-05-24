@@ -17,17 +17,19 @@ const db = mysql.createConnection({
   user: "root",
   host: "localhost",
   password: "",
-  database: "users",
+  database: "userdb",
 });
 
 app.get("/check-email", (req, res) => {
   const { email } = req.query;
+  console.log('email ah', email)
   const SQL = "SELECT email FROM users WHERE email = ?";
   db.query(SQL, [email], (err, results) => {
     if (err) {
-      res.status(500).send({ error: err.message });
+      console.log("error", err)
+      return res.status(500).send({ error: err.message });
     } else {
-      res.send({ exists: results.length > 0 });
+      return res.send({ exists: results.length > 0 });
     }
   });
 });

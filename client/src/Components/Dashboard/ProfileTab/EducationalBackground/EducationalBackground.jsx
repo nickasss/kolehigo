@@ -19,12 +19,12 @@ const EducationalBackground = () => {
             <div className="HorizontalContainer">
                 <ProfileName />
                 <div className="MiniTabs">
-                    <Link to='/Dashboard'><button className="ApplicantInfo">Applicant's Information</button></Link>
-                    <Link to='/LogInCredentials'><button className="LogCred">Log In Credentials</button></Link>
-                    <Link to={'/EducationalBackground'}><button className="EduBack">Educational Background</button></Link>
-                    <Link to={'/MyColleges'}><button className="MyColleges">My Colleges</button></Link>
-                    <button className="InterSchol">Interested Scholarships</button>
-                    <Link to={'/DocumentsUploaded'}><button className="DocUplo">Documents Uploaded</button></Link>
+                        <Link to={'/Dashboard'}><button className="ApplicantInfo">Applicant's Information</button></Link>
+                        <Link to={'/LogInCredentials'}><button className="LogCred">Log In Credentials</button></Link>
+                        <Link to={'/EducationalBackground'}><button className="EduBack">Educational Background</button></Link>
+                        <Link to={'/MyColleges'}><button className="MyColleges">My Colleges</button></Link>
+                        <button classname="InterSchol">Interested Scholarships</button>
+                        <Link to={'/DocumentsUploaded'}><button classname="DocUplo">Documents Uploaded</button></Link>
                 </div>
                 <div className="ProfilePrompt">
                     <h1>Educational Background</h1>

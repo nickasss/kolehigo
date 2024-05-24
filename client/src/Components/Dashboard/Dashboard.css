@@ -1,18 +1,17 @@
 .Grid {
   background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94));
-  overflow: hidden;
 }
 .Grid .VerticalContainer {
   background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94), rgb(29, 26, 57));
-  width: 85px;
+  width: 160px;
   height: 1000px;
   position: fixed;
 }
 .Grid .VerticalContainer img {
-  width: 80px;
-  height: 100px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  margin-top: 20px;
 }
 .Grid .VerticalContainer button {
   font-size: medium;
@@ -25,74 +24,53 @@
 .Grid .VerticalContainer button:hover img {
   filter: brightness(0);
   cursor: pointer;
-  margin-left: 10px;
-}
-.Grid .VerticalContainer .Notifications, .Grid .VerticalContainer .Logout {
-  width: 100%;
-  background-color: rgba(144, 38, 112, 0);
-  color: rgb(217, 217, 217);
-  border: none;
-  cursor: pointer;
-  padding-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-}
-.Grid .VerticalContainer .Notifications img, .Grid .VerticalContainer .Logout img {
-  margin-bottom: -10px;
-  width: 60px;
-  height: 81px;
-}
-.Grid .VerticalContainer .Notifications:hover, .Grid .VerticalContainer .Logout:hover {
-  background-color: rgb(217, 217, 217);
-  color: black;
-}
-.Grid .VerticalContainer .Notifications:hover img, .Grid .VerticalContainer .Logout:hover img {
-  filter: brightness(0);
-  cursor: pointer;
 }
 .Grid .VerticalContainer .Profile, .Grid .VerticalContainer .Colleges, .Grid .VerticalContainer .Scholarships {
   width: 100%;
   background-color: rgb(217, 217, 217);
   border: none;
   cursor: pointer;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 .Grid .VerticalContainer .Profile {
-  margin-top: 91px;
+  margin-top: 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 .Grid .VerticalContainer .Profile img {
+  margin-right: 11px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
 }
 .Grid .VerticalContainer .Colleges {
+  padding-top: 10px;
   background-color: rgba(144, 38, 112, 0);
   color: rgb(217, 217, 217);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 .Grid .VerticalContainer .Colleges img {
+  margin-right: 11px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
 }
 .Grid .VerticalContainer .Scholarships {
+  padding-top: 10px;
   background-color: rgba(144, 38, 112, 0);
   color: rgb(217, 217, 217);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 13px;
+  font-size: 20px;
 }
 .Grid .VerticalContainer .Scholarships img {
+  margin-right: 11px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
@@ -101,12 +79,91 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.Grid .VerticalContainer .Notifications {
+  margin-left: 38px;
+  border: none;
+  position: absolute;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Grid .VerticalContainer .Notifications img {
+  margin-left: 2px;
+  width: 50px;
+  height: 40px;
+}
+.Grid .VerticalContainer .Notifications:hover {
+  color: rgba(253, 253, 253, 0.697);
+  background-color: rgba(155, 97, 22, 0);
+}
+.Grid .VerticalContainer .Logout {
+  border: none;
+  margin-left: 50px;
+  margin-top: 60px;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+.Grid .VerticalContainer .Logout img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+.Grid .VerticalContainer .Logout:hover {
+  color: rgba(211, 211, 211, 0.566);
+  background-color: rgba(155, 97, 22, 0);
+}
+.Grid .VerticalContainer .Notifications:hover img,
+.Grid .VerticalContainer .Logout:hover img {
+  filter: invert(30%);
+}
+.Grid .VerticalContainer .notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Grid .VerticalContainer .notification-overlay .notification-content {
+  height: 500px;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.448);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+.Grid .VerticalContainer .notification-overlay .notification-content h2 {
+  margin-bottom: 10px;
+}
+.Grid .VerticalContainer .notification-overlay .notification-content button {
+  margin-top: 360px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #eeeeee;
+  color: rgb(3, 3, 3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Grid .VerticalContainer .notification-overlay .notification-content button:hover {
+  background-color: rgba(255, 255, 255, 0.4235294118);
+}
 .Grid .HorizontalContainer {
   background-color: rgb(217, 217, 217);
   padding: 10px;
-  width: 1746px;
-  height: 200px;
-  margin-left: 85.1px;
+  width: 1367px;
+  height: 360px;
+  margin-left: 160px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 15px;
@@ -148,35 +205,37 @@
 }
 .Grid .HorizontalContainer .NameDis {
   display: flex;
+  margin-top: 20px;
   margin-left: 130px;
 }
 .Grid .HorizontalContainer .NameDis h1 {
-  margin-top: 25px;
+  margin-top: 40px;
   margin-left: 40px;
   font-size: 40px;
   font-weight: 500;
 }
 .Grid .HorizontalContainer .NameDis h1 p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 30px;
 }
 .Grid .HorizontalContainer .NameDis img {
-  height: 130px;
-  width: auto;
+  height: 170px;
+  width: 170px;
 }
 .Grid .HorizontalContainerBOTTOM {
   overflow: hidden;
   margin-top: 10px;
   background-color: rgb(217, 217, 217);
   padding: 10px;
-  width: 1546px;
-  height: 532px;
-  margin-left: 85px;
+  width: 1368px;
+  height: 370px;
+  margin-left: 160px;
+  border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
 .Grid .HorizontalContainerBOTTOM form {
   display: flex;
-  margin-top: 95px;
+  margin-top: 15px;
   margin-left: 90px;
 }
 .Grid .HorizontalContainerBOTTOM #FirstName, .Grid .HorizontalContainerBOTTOM #MiddleName, .Grid .HorizontalContainerBOTTOM #LastName, .Grid .HorizontalContainerBOTTOM #Suffix {
@@ -240,4 +299,6 @@
   margin-left: 350px;
   color: rgba(255, 0, 0, 0.547);
   width: 100px;
+  background-color: rgba(255, 222, 173, 0);
+  border: none;
 }/*# sourceMappingURL=Dashboard.css.map */

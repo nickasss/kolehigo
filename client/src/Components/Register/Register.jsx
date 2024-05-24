@@ -97,6 +97,7 @@ const Register = () => {
 
         Axios.get(`http://localhost:3002/check-email?email=${email}`)
             .then(response => {
+                console.log('emial', email)
                 if (response.data.exists) {
                     setErrorMessage('Email already exists in the database.');
                 } else {
