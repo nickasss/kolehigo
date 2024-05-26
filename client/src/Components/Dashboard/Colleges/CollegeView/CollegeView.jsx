@@ -52,7 +52,7 @@ const CollegeView = () => {
                         <p>CPU Research and Development Building, Jaro,<br/> Iloilo City, 5000 Iloilo</p>
                     </div>
                     <div className="Right"> 
-                        <button className="Compare">Compare</button>
+                        <Link to={'/Compare'}><button className="Compare">Compare</button></Link>
                         <button className="Apply">Add to Colleges</button>
                     </div>
                 </div>

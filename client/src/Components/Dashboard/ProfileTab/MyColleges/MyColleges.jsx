@@ -43,7 +43,7 @@ const MyColleges = () => {
             // You can set a timeout to hide the message after a few seconds if needed
             setTimeout(() => {
                 setApplicationSubmitted(false);
-            }, 500);
+            }, 5000);
         }
     }, [applicationSubmitted]);
 
@@ -55,16 +55,23 @@ const MyColleges = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        // First, simulate the form submission, then update the state.
-        console.log('Submitting application for:', selectedCourse.course, 'at', selectedCollege);
-        setEnrollmentModalVisible(false);  // Close the enrollment modal
-        setApplicationSubmitted(true);     // Set application submitted to true to show the success message
+        // Close all modals first
+        closeModal();
+
+        // Set a timeout to display the success message after a slight delay
+        setTimeout(() => {
+            setApplicationSubmitted(true);
+
+            // Optionally reset the success message after a few seconds
+            setTimeout(() => {
+                setApplicationSubmitted(false);
+            }, 5000);
+        }, 300); // Adjust this delay based on how quickly your modal transitions are
     };
 
     const closeModal = () => {
         setModalVisible(false);
         setEnrollmentModalVisible(false);
-        setApplicationSubmitted(false); // Also reset the success message state when closing modals
     };
 
     return (
@@ -75,12 +82,12 @@ const MyColleges = () => {
             <div className="HorizontalContainer">
                 <ProfileName />
                 <div className="MiniTabs">
-                    <Link to='/Dashboard'><button className="ApplicantInfo">Applicant's Information</button></Link>
-                    <Link to='/LogInCredentials'><button className="LogCred">Log In Credentials</button></Link>
-                    <button className="EduBack">Educational Background</button>
-                    <Link to='/MyColleges'><button className="MyColleges">My Colleges</button></Link>
-                    <button className="InterSchol">Interested Scholarships</button>
-                    <button className="DocUplo">Documents Uploaded</button>
+                        <Link to={'/Dashboard'}><button className="ApplicantInfo">Applicant's Information</button></Link>
+                        <Link to={'/LogInCredentials'}><button className="LogCred">Log In Credentials</button></Link>
+                        <Link to={'/EducationalBackground'}><button className="EduBack">Educational Background</button></Link>
+                        <Link to={'/MyColleges'}><button className="MyColleges">My Colleges</button></Link>
+                        <button classname="InterSchol">Interested Scholarships</button>
+                        <Link to={'/DocumentsUploaded'}><button classname="DocUplo">Documents Uploaded</button></Link>
                 </div>
                 <div className="ProfilePrompt">
                     <h1>My Colleges</h1>
@@ -88,10 +95,11 @@ const MyColleges = () => {
                 </div>
             </div>
             <div className="HorizontalContainerBOTTOM">
-                {myColleges.map(college => (
+                {myColleges.map((college) => (
                     <div key={college.id} className="mycollege-item">
                         <img src={college.logo} alt={college.name} className="mycollege-logo" />
                         <div className="mycollege-details">
+                            
                             <h5>{college.name}</h5>
                             <p>{college.address}</p>
                             <button onClick={() => fetchCourses(college.name)} className="myview">
@@ -131,14 +139,14 @@ const MyColleges = () => {
                         <br></br>
                         <p>Enrollment process for {selectedCourse.course} at {selectedCollege}.</p>
                         <br></br>
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} className='form'>
                             <li>Form 137 <span className="checkmark">&#10003;</span></li>
                             <li>Good Moral <span className="checkmark">&#10003;</span></li>
                             <li>2pcs. of 2x2 ID Picture <span className="checkmark">&#10003;</span></li>
                             <li>Birth Certificate <span className="checkmark">&#10003;</span></li>
                             
                             <br></br><br></br>
-                            <button type="submit" className='apply-button'>Submit Application</button>
+                            <button type="submit" className='submit-button'>Submit Application</button>
                         </form>
                     </div>
                 </div>

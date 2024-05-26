@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom'
 import './Dashboard.css'
 import '../../App.css'
@@ -113,8 +112,8 @@ const Dashboard = () => {
                         <Link to={'/LogInCredentials'}><button className="LogCred">Log In Credentials</button></Link>
                         <Link to={'/EducationalBackground'}><button className="EduBack">Educational Background</button></Link>
                         <Link to={'/MyColleges'}><button className="MyColleges">My Colleges</button></Link>
-                        <button className="InterSchol">Interested Scholarships</button>
-                        <button className="DocUplo">Documents Uploaded</button>
+                        <button classname="InterSchol">Interested Scholarships</button>
+                        <Link to={'/DocumentsUploaded'}><button classname="DocUplo">Documents Uploaded</button></Link>
                     </div>
                     <div className ="ProfilePrompt">
                         <h1>Profile</h1>
@@ -143,4 +142,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard    
+export default Dashboard

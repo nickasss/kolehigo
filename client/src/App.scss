@@ -82,7 +82,8 @@ img {
 }
 
 .btn .icon {
-    margin-left: .5rem;
+    margin-left: .10rem;
+  
 }
 
 .btn:hover {
@@ -157,12 +158,12 @@ img {
         top: 38%;
         left: 56.5%;
         transform: translate(-50%, -50%);
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 90%;
+        max-height: 95%;
     }
 
     .logo {
-        margin-right: 4.5rem;
+        margin-right: 20rem;
         margin-top: -5rem;
         width: 250px;
         height: auto;
@@ -170,7 +171,7 @@ img {
 
     .above-footer-headtext {
         position: absolute;
-        bottom: 155px;
+        bottom: 142px;
         left: 50%;
         transform: translateX(-50%);
         color: var(--whiteColor);
@@ -185,14 +186,15 @@ img {
         left: 50%;
         transform: translateX(-50%);
         color: var(--whiteColor);
-        font-size: 13.5px;
-        font-weight: 100;
+        font-size: 13px;
+        font-weight: 200;
         z-index: 2;
         white-space: nowrap;
     }
     .indicator-container {
         display: flex;
-        margin-top: 480px;
+        margin-top: 40px;
+
         overflow: visible;
         justify-content: center;
 
@@ -200,7 +202,10 @@ img {
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            background-color: #ccc;
+            
+            
+
+            background-color: #ccccccdd;
             margin: 0 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
@@ -210,7 +215,7 @@ img {
             }
 
             &.active {
-                background-color: #662549;
+                background-color: #832e5d;
             }
         }
     }
@@ -243,7 +248,8 @@ img {
 .backgroundDiv .footerDiv {
     bottom: 10px;
     padding: 0 1rem;
-    height: 60px;
+    height: 50px;
+    width: 620px;
     background: rgba(255, 255, 255, 0.248);
     left: 10px;
     right: 10px;
@@ -370,17 +376,18 @@ img {
     color: var(--whiteColor);
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 17px;
     height: 4rem;
     width: 100%;
     font-weight: 700;
-    gap: .5rem;
+    gap: .3rem;
     transition: .6s ease;
 }
 
 .form .btn .icon {
     font-size: 25px;
     transition: .3s ease;
+    
 }
 
 .form .btn:hover {
@@ -562,3 +569,11 @@ img {
     }
 }
 
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.container, .backgroundDiv {
+    overflow-x: hidden;
+}
