@@ -1,9 +1,5 @@
 .Grid0 {
-<<<<<<< HEAD
   background-image: linear-gradient(rgb(119, 35, 81), rgb(73, 0, 94));
-=======
-  background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94));
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
   /* Adjust button hover effects */
   /* Add this to your Colleges.scss file */
 }
@@ -34,15 +30,11 @@
   width: 100%;
   border: none;
   cursor: pointer;
-  padding-bottom: 2px;
+  padding-bottom: 10px;
 }
 .Grid0 .VerticalContainer .Profile {
   background-color: rgba(255, 255, 255, 0);
-<<<<<<< HEAD
   margin-top: 2px;
-=======
-  margin-top: 26px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +94,7 @@
 }
 .Grid0 .VerticalContainer .Notifications img {
   margin-left: 2px;
+  margin-bottom: 2px;
   width: 50px;
   height: 40px;
 }
@@ -111,7 +104,7 @@
 }
 .Grid0 .VerticalContainer .Logout {
   border: none;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 85px;
   position: absolute;
   color: white;
@@ -461,32 +454,19 @@
   flex-direction: column; /* Stacks children vertically */
   align-items: center; /* Centers children horizontally */
   justify-content: center; /* Centers children vertically */
-<<<<<<< HEAD
   padding: 10px; /* Adds some padding around the content */
   width: 200px;
   background-color: whitesmoke; /* Extra space on top */
-=======
-  padding: 20px; /* Adds some padding around the content */
-  width: 200px;
-  background-color: gray; /* Extra space on top */
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
   border-radius: 10px;
 }
 .Grid0 .college-list .label-container > div {
   margin: 10px; /* Adds space between the rows of checkboxes */
-<<<<<<< HEAD
   margin-left: 2px;
-=======
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
 }
 .Grid0 .college-list .button-container {
   display: flex;
   justify-content: center; /* Center the button horizontally */
-<<<<<<< HEAD
   margin-top: 20px; /* Space above the button */
-=======
-  margin-top: 10px; /* Space above the button */
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
 }
 .Grid0 .college-list .toggle-filters-button {
   background-color: #451952; /* Purple background */
@@ -500,10 +480,7 @@
   display: flex;
   width: 100px;
   font-size: 12px;
-<<<<<<< HEAD
   font-family: "Century Gothic", sans-serif;
-=======
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
 }
 .Grid0 .college-list .toggle-filters-button:hover {
   background-color: #451952; /* A lighter purple when hovered */
@@ -519,10 +496,7 @@
   cursor: pointer; /* Cursor indicates it's clickable */
   margin-top: 10px; /* Space above the button */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-<<<<<<< HEAD
   font-family: "Century Gothic", sans-serif;
-=======
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
 }
 .Grid0 .college-list .Apply-filters:hover {
   background-color: #7c2de9; /* Lighter purple when hovered */

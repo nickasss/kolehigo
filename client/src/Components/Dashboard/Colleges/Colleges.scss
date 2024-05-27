@@ -11,15 +11,9 @@
       position: fixed;
       
       img{
-<<<<<<< HEAD
           width: 100px;
           height: 100px;
           margin-left: 20px;
-=======
-          width: 150px;
-          height: 150px;
-          margin-left: 10px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           margin-top: 20px;
       }
   
@@ -29,11 +23,7 @@
       }
       
       button:hover {
-<<<<<<< HEAD
           // background-color:rgb(217 217 217);
-=======
-          background-color:rgb(217 217 217);
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           color: black;
       
           img {
@@ -43,108 +33,61 @@
       }
       .Profile, .Colleges, .Scholarships {
           width: 100%;
-<<<<<<< HEAD
-          border: none;
-          cursor: pointer;
-          padding-bottom: 2px;
-=======
-          background-color: rgb(217 217 217);
           border: none;
           cursor: pointer;
           padding-bottom: 10px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
       }
       
       .Profile {
           background-color: rgba(255, 255, 255, 0);
-<<<<<<< HEAD
           margin-top: 2px;
           display: flex;
           flex-direction: column;
           align-items: center;
           font-size: 14px;
-=======
-          margin-top: 26px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-size: 20px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           color: rgb(217 217 217);
   
           img {
               filter: invert(100%);
               margin-right: 11px;
               margin-bottom: -10px; 
-<<<<<<< HEAD
               width: 58px;
               height: 80px;
-=======
-              width: 60px;
-              height: 81px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           }
   
       }
   
       .Colleges {
-<<<<<<< HEAD
           padding-top: 2px;
-=======
-          padding-top: 10px;
-          background-color: rgb(217 217 217);
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           color: rgb(0, 0, 0);
           display: flex;
           flex-direction: column;
           align-items: center;
-<<<<<<< HEAD
           font-size: 14px;
-=======
-          font-size: 20px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
   
           img {
               filter: brightness(0); 
               margin-right: 11px;
               margin-bottom: -10px; 
-<<<<<<< HEAD
               width: 58px;
               height: 80px;
-=======
-              width: 60px;
-              height: 81px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           }
       }
   
   
       .Scholarships {
-<<<<<<< HEAD
           padding-top: 2px;
-=======
-          padding-top: 10px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           background-color: rgba(144, 38, 112, 0);
           color: rgb(217 217 217);
           display: flex;
           flex-direction: column;
           align-items: center;
-<<<<<<< HEAD
           font-size: 14px;
           img {
               margin-right: 11px;
               margin-bottom: -10px; 
               width: 58px;
               height: 80px;
-=======
-          font-size: 20px;
-          img {
-              margin-right: 11px;
-              margin-bottom: -10px; 
-              width: 60px;
-              height: 81px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
           }
       }
   
@@ -162,9 +105,9 @@
         align-items: center;
         img{
             margin-left: 2px;
+            margin-bottom: 2px;
             width: 50px;
             height: 40px;
-<<<<<<< HEAD
         }
         &:hover {
             color: rgba(253, 253, 253, 0.697);
@@ -173,7 +116,7 @@
     }
     .Logout{
         border: none;
-        margin-left: 20px;
+        margin-left: 50px;
         margin-top: 85px;
         position: absolute;
         color: white;
@@ -185,42 +128,12 @@
             margin-right: 20px;
             width: 20px;
             height: 20px;
-=======
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
         }
-        &:hover {
-<<<<<<< HEAD
-            color: rgba(211, 211, 211, 0.566);
-            background-color: rgba(155, 97, 22, 0)
-          }
-    }
-=======
-            color: rgba(253, 253, 253, 0.697);
-            background-color: rgba(155, 97, 22, 0)
-          }
-    }
-    .Logout{
-        border: none;
-        margin-left: 50px;
-        margin-top: 60px;
-        position: absolute;
-        color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        font-size: 13px;
-        img{ 
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
-        }
-
         &:hover {
             color: rgba(211, 211, 211, 0.566);
             background-color: rgba(155, 97, 22, 0)
           }
     }
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
   }
 
   .HorizontalContainer {
