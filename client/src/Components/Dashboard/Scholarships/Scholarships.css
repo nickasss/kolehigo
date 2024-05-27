@@ -2,20 +2,23 @@
   background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94));
 }
 .Grid3 .VerticalContainer {
-  background-image: linear-gradient(rgb(102, 37, 73), rgb(102, 37, 73), rgb(102, 37, 73));
-  width: 160px;
+  background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94), rgb(29, 26, 57));
+  width: 110px;
   height: 1000px;
   position: fixed;
 }
+.Grid3 .VerticalContainer .Koheligo {
+  margin-left: 5px;
+}
 .Grid3 .VerticalContainer img {
-  width: 150px;
-  height: 150px;
-  margin-left: 10px;
+  width: 100px;
+  height: 110px;
+  position: relative;
   margin-top: 20px;
 }
 .Grid3 .VerticalContainer button {
   font-size: medium;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(144, 38, 112, 0);
 }
 .Grid3 .VerticalContainer button:hover {
   background-color: rgb(217, 217, 217);
@@ -33,48 +36,43 @@
   padding-bottom: 10px;
 }
 .Grid3 .VerticalContainer .Profile {
-  background-color: rgba(255, 255, 255, 0);
-  margin-top: 26px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
-  color: rgb(217, 217, 217);
+  font-size: 15px;
 }
 .Grid3 .VerticalContainer .Profile img {
-  filter: invert(100%);
-  margin-right: 11px;
+  margin-right: 0px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
 }
 .Grid3 .VerticalContainer .Colleges {
   padding-top: 10px;
-  background-color: rgba(217, 217, 217, 0);
-  color: rgb(255, 255, 255);
+  background-color: rgba(144, 38, 112, 0);
+  color: rgb(217, 217, 217);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 .Grid3 .VerticalContainer .Colleges img {
-  filter: brightness(1);
-  margin-right: 11px;
+  margin-right: 0px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
 }
 .Grid3 .VerticalContainer .Scholarships {
   padding-top: 10px;
-  background-color: rgb(217, 217, 217);
-  color: rgb(0, 0, 0);
+  background-color: rgba(144, 38, 112, 0);
+  color: rgb(217, 217, 217);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 .Grid3 .VerticalContainer .Scholarships img {
-  filter: brightness(0);
   margin-right: 11px;
   margin-bottom: -10px;
   width: 60px;
@@ -85,7 +83,7 @@
      object-fit: contain;
 }
 .Grid3 .VerticalContainer .Notifications {
-  margin-left: 38px;
+  margin-left: 10px;
   border: none;
   position: absolute;
   color: white;
@@ -105,8 +103,8 @@
 }
 .Grid3 .VerticalContainer .Logout {
   border: none;
-  margin-left: 50px;
-  margin-top: 60px;
+  margin-left: 30px;
+  margin-top: 80px;
   position: absolute;
   color: white;
   display: flex;
@@ -128,7 +126,7 @@
   filter: invert(30%);
 }
 .Grid3 .VerticalContainer .notification-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -165,7 +163,7 @@
 }
 .Grid3 .HorizontalContainer {
   background-image: linear-gradient(rgb(73, 0, 94), rgb(102, 37, 73), rgb(102, 37, 73));
-  margin-left: 160px;
+  margin-left: 110px;
   position: absolute;
 }
 .Grid3 .HorizontalContainer h1 {
@@ -185,7 +183,7 @@
 }
 .Grid3 .HorizontalContainer .college1 {
   width: 1547px;
-  height: 110px;
+  height: 240px;
 }
 .Grid3 .SearchBar {
   position: fixed;
@@ -227,7 +225,7 @@
   padding-top: 20px;
   height: 303px;
   background-color: rgb(217, 217, 217);
-  margin-left: 160px;
+  margin-left: 110px;
   margin-top: 110px;
   position: absolute;
   overflow-x: auto; /* Enable horizontal scrolling */
@@ -319,7 +317,7 @@
   background-color: rgb(217, 217, 217);
   position: absolute;
   margin-top: 412px;
-  margin-left: 160px;
+  margin-left: 110px;
   width: 1547px;
   height: 369px;
   overflow-x: hidden;

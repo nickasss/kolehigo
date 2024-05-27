@@ -2,12 +2,12 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
-// Create an Express app
+// create an express app
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-// Configure MySQL connection
+// iconfigure MySQL connection
 const db = mysql.createConnection({
     user: 'root',
     host: 'localhost',
@@ -15,7 +15,7 @@ const db = mysql.createConnection({
     database: 'courses',
 });
 
-// Connect to MySQL
+// connect to MySQL
 db.connect(err => {
     if (err) {
         console.error('Failed to connect to the database:', err.message);
@@ -24,7 +24,7 @@ db.connect(err => {
     console.log('Successfully connected to the database with ID:', db.threadId);
 });
 
-// Endpoint to get the list of courses for a specific college
+// endpoint para kwaon ang list of courses for a specific college
 app.get('/courses/:school', (req, res) => {
     console.log(`Requested school: ${req.params.school}`);
     const school = req.params.school.toLowerCase();

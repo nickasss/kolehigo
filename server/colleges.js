@@ -16,7 +16,7 @@ const db = mysql.createConnection({
     database: 'colleges',
 });
 
-// Connect to the MySQL server
+// connect sa MySQL server
 db.connect((err) => {
     if (err) {
         console.error('Error connecting to the database: ' + err.stack);
@@ -25,18 +25,18 @@ db.connect((err) => {
     console.log('Connected to database with ID: ' + db.threadId);
 });
 
-// Endpoint to get the list of colleges with optional filtering
+//get the data based on the fitlered option
 app.get('/colleges', (req, res) => {
     let sqlQuery = 'SELECT * FROM college WHERE 1=1';
     const params = [];
 
-    // Filter by name if provided
+    // filter by name kung provided
     if (req.query.name) {
         sqlQuery += ' AND name LIKE ?';
         params.push(`%${req.query.name}%`);
     }
 
-    // Filter by location if provided
+    // filter by location kung provided
     if (req.query.location) {
         sqlQuery += ' AND location LIKE ?';
         params.push(`%${req.query.location}%`);
@@ -48,13 +48,13 @@ app.get('/colleges', (req, res) => {
         params.push(req.query.type);
     }
 
-    // Filter by area (Urban or Rural) if provided
+    //checks if what area ang school
     if (req.query.area) {
         sqlQuery += ' AND area = ?';
         params.push(req.query.area);
     }
 
-    // Execute the query with the filtered parameters
+    // execute the query with the filtered parameters
     db.query(sqlQuery, params, (err, results) => {
         if (err) {
             console.error('Error fetching colleges:', err);
@@ -64,7 +64,7 @@ app.get('/colleges', (req, res) => {
     });
 });
 
-// Server listening on port 3010
+// server ga listening on port 3010
 app.listen(3010, () => {
     console.log('Server is running on port 3010');
 });

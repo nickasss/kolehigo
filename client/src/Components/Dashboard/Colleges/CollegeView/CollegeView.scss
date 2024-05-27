@@ -3,20 +3,23 @@
     
     .VerticalContainer {
         background-image: linear-gradient(rgb(102 37 73), rgb(102 37 73), rgb(102 37 73));
-        width: 160px;
+        width: 110px;
         height: 1000px; 
         position: fixed;
         
+        .Koheligo{
+            margin-left: 5px;
+        }
         img{
-            width: 150px;
-            height: 150px;
-            margin-left: 10px;
+            width: 100px;
+            height: 110px;
+            position: relative;
             margin-top: 20px;
         }
     
         button {
             font-size: medium;
-            background-color: rgba(255, 255, 255, 0);
+            background-color: rgba(144, 38, 112, 0);
         }
         
         button:hover {
@@ -29,7 +32,6 @@
             }
         }
         .Profile, .Colleges, .Scholarships {
-            
             width: 100%;
             background-color: rgb(217 217 217);
             border: none;
@@ -38,39 +40,41 @@
         }
         
         .Profile {
-            background-color: rgba(255, 255, 255, 0);
-            margin-top: 26px;
+            background-color: rgba(144, 38, 112, 0);
+            color: rgb(217 217 217);
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
-            color: rgb(217 217 217);
-    
-            img {
-                filter: invert(100%);
-                margin-right: 11px;
+            font-size: 15px;
+            
+            img {   
+                margin-right: 0px;
                 margin-bottom: -10px; 
                 width: 60px;
                 height: 81px;
+                filter: invert(100%);
+                cursor: pointer; 
             }
     
         }
     
         .Colleges {
             padding-top: 10px;
-            background-color: rgb(217 217 217);
+            background-color: rgb(217 217 217); 
             color: rgb(0, 0, 0);
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 15px;
     
             img {
-                filter: brightness(0); 
-                margin-right: 11px;
+                margin-right: 0px;
                 margin-bottom: -10px; 
                 width: 60px;
                 height: 81px;
+                filter: brightness(0); 
+                cursor: pointer; 
             }
         }
     
@@ -82,7 +86,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 15px;
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
@@ -95,7 +99,7 @@
             object-fit: contain; 
         }
         .Notifications{
-            margin-left: 38px;
+            margin-left: 10px;
             border: none;
             position: absolute;
             color: white;
@@ -115,8 +119,8 @@
         }
         .Logout{
             border: none;
-            margin-left: 50px;
-            margin-top: 60px;
+            margin-left: 30px;
+            margin-top: 80px;
             position: absolute;
             color: white;
             display: flex;
@@ -140,7 +144,7 @@
           filter: invert(30%); // Invert back to original color on hover
         }
         .notification-overlay {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -149,7 +153,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
           
             .notification-content {
                 height: 500px;
@@ -181,11 +184,12 @@
             }
         }
     }
+
     
      .HorizontalContainer {
-        width: 1368px;
         background-image: linear-gradient(rgb(73 0 94), rgb(102 37 73), rgb(102 37 73));
-        margin-left: 160px;
+        margin-left: 110px;
+        width: 1597px;
         position: absolute;
         
         .kolehigo{
@@ -197,7 +201,7 @@
         }
         
         .college1 {
-            width: 1360px;
+            width: 1547px;
             height: 240px;
         }
     }
@@ -245,9 +249,10 @@
         position: absolute;
         background-color: rgb(217, 217, 217);
         margin-top: 243px;
-        margin-left: 159px;
+        margin-left: 110px;
         padding-right: 90px;
         padding-bottom: 35px;
+        width: 1597px;
         display: flex;
         .Left{
             margin-left: 80px;
@@ -264,13 +269,12 @@
                 font-weight: 600;
             }
             p{
-                color: black;
                 margin-top: 10px;
                 margin-left: 150px;
             }
         }
         .Right{
-            margin-left: 256px;
+            margin-left: 400px;
             .Compare{
                 position: absolute;
                 margin-top: 70px;
@@ -308,19 +312,20 @@
     .fill{
         position: absolute;
         padding: 5px;
-        padding-right: 1360px;
+        padding-right: 1592px;
         background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94));
         margin-top: 384px;
-        margin-left: 160px;
+        margin-left: 110px;
     }
     .HorizontalContainer2{
         
         margin-top: 392px;
-        margin-left: 160px; 
+        margin-left: 110px; 
         position: absolute;
         background-color: rgb(217, 217, 217);
+        width: 1597px;
         .MiniTabs {
-            padding-right: 390px;
+            padding-right: 599px;
             display: flex;
             padding-top: 20px;
             margin-top: 2px;
@@ -329,7 +334,6 @@
         }
         
         .MiniTabs button {
-            padding-left: 17px;
             cursor: pointer;
             background-color: transparent;
             border: none;

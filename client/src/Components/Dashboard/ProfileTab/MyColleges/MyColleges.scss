@@ -6,15 +6,17 @@
     //vertical container
     .VerticalContainer {
         background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94), rgb(29 26 57));
-        width: 160px;
+        width: 110px;
         height: 1000px; 
         position: fixed;
         
-        
+        .Koheligo{
+            margin-left: 5px;
+        }
         img{
-            width: 150px;
-            height: 150px;
-            margin-left: 10px;
+            width: 100px;
+            height: 110px;
+            position: relative;
             margin-top: 20px;
         }
     
@@ -41,14 +43,14 @@
         }
         
         .Profile {
-            margin-top: 26px;
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
-    
-            img {
-                margin-right: 11px;
+            font-size: 15px;
+            
+            img {   
+                margin-right: 0px;
                 margin-bottom: -10px; 
                 width: 60px;
                 height: 81px;
@@ -63,10 +65,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 15px;
     
             img {
-                margin-right: 11px;
+                margin-right: 0px;
                 margin-bottom: -10px; 
                 width: 60px;
                 height: 81px;
@@ -81,7 +83,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 15px;
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
@@ -94,7 +96,7 @@
             object-fit: contain; 
         }
         .Notifications{
-            margin-left: 38px;
+            margin-left: 10px;
             border: none;
             position: absolute;
             color: white;
@@ -102,7 +104,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            z-index: 10000000;
             img{
                 margin-left: 2px;
                 width: 50px;
@@ -115,8 +116,8 @@
         }
         .Logout{
             border: none;
-            margin-left: 50px;
-            margin-top: 60px;
+            margin-left: 30px;
+            margin-top: 80px;
             position: absolute;
             color: white;
             display: flex;
@@ -186,9 +187,9 @@
     .HorizontalContainer {
         background-color: rgb(217 217 217);
         padding: 10px;
-        width: 1368px; 
+        width: 1596px; 
         height: 360px;
-        margin-left: 160px; 
+        margin-left: 110px; 
         border-top-left-radius: 25px; 
         border-top-right-radius: 25px;
         border-bottom-left-radius: 15px; 
@@ -261,51 +262,51 @@
         }
     }
 
-    .HorizontalContainerBOTTOM {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centers content horizontally */
-        justify-content: center; /* Centers content vertically */
+    .HorizontalContainerBOTTOM{
         overflow-y: auto; 
         margin-top: 10px;
-        background-color: rgb(217, 217, 217);
-        height: 372px;
-        margin-left: 160px;
-        border-radius: 25px;
-        box-sizing: border-box;
-        overflow-y: auto; /* Allows vertical scrolling when content overflows */
-        width: 1368px;
+        background-color: rgb(217 217 217);
+        padding: 10px;
+        width: 1596px; 
+        height: 411px;
+        margin-left: 110px; 
+        border-top-left-radius: 25px; 
+        border-top-right-radius: 25px;
 
 
 
         .mycollege-item {
+            position: relative;
             display: flex;
-            align-items: center; // Align items vertically
-            justify-content: space-between; // Space between the logo/details and the button
+            align-items: center;
+            justify-content: space-between; // This will ensure the items are spaced evenly
             background-color: #fff;
-            padding: 30px;
-            border-radius: 40px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 2px rgba(0, 0, 0, 0.23);
+            padding: 20px;
+            border-radius: 40px; // Rounded corners for each college item
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 2px rgba(0, 0, 0, 0.23); // Soft, spread shadow
             width: 100%;
-            max-width: 1200px; // Control the maximum width
+            height: 150px;
+            max-width: 1200px;
             margin-top: 20px;
-            overflow: hidden;
+            margin-left: 140px;
+            overflow: hidden; // Ensures content does not overflow the item's bounds
+            min-height: 150px; // Minimum height for each college item
         }
         
         .mycollege-logo {
-            flex-shrink: 0;
+            flex-shrink: 0; 
             width: 100px;
             height: auto;
             margin-right: 20px;
         }
         
         .mycollege-details {
-            flex-grow: 1; // Allows the details section to take up the remaining space
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-grow: 1;
+            padding-right: 10px; // Space between text and buttons
             
             h5 {
+                position: absolute;
+                margin-top: 40px;
                 font-size: 20px;
                 margin-bottom: 5px;
 
@@ -313,7 +314,7 @@
     
             p {
                 position: absolute;
-                margin-top: 35px;
+                margin-top: 70px;
                 font-size: 15px;
             }
         }
@@ -354,14 +355,10 @@
             }
         }
         .myview {
-            margin-left: auto; // Pushes the button to the far right
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            background-color: rgb(69, 25, 82);
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
+            margin-left: 700px;
+            background-color: rgb(69, 25, 82); // Color of the button
+            color: white; // Text color of the button
+            margin-bottom: 4.5rem;
         }
         .Status{
             background-color: rgb(15, 142, 53); // Color of the button
@@ -419,43 +416,21 @@
 
     /* Course display styling */
     .display-course {
-        position: relative;
         background: #f4f4f4;
         border: 1px solid #ddd;
-        margin-top: 10px;
+        margin-top: 8px;
         padding: 8px;
         border-radius: 4px;
     }
-    .form{
-        position: relative;
-        background: #f4f4f4;
-        border: 1px solid #ddd;
-        margin-top: 10px;
-        padding: 8px;
-        border-radius: 4px; 
-    }
-    .submit-button{
-        position: absolute; // Positioning relative to the nearest positioned ancestor
-        left: 2; // Align to the leftmost part
-        top: 90px;
+    .apply-button{
+        margin-left: 10px;
         padding: 8px;
         background-color: rgb(152, 93, 170);
         border-radius: 10px;
-        height: 30px;
-        font-weight: bold; // Changed from 10px, as 'font-weight' does not use px units
-    }
-    .apply-button {
-        position: absolute; // Positioning relative to the nearest positioned ancestor
-        right: 0; // Align to the leftmost part
-        top: 2px;
-        padding: 8px;
-        background-color: rgb(152, 93, 170);
-        border-radius: 10px;
-        height: 30px;
-        font-weight: bold; // Changed from 10px, as 'font-weight' does not use px units
+        height: 40px;
+        font-weight: bolder;
     }
     .container_submission{
-        position: relative;
         padding: 10px;
         background-color: gray;
         border-radius: 10px;
@@ -466,36 +441,4 @@
         color: green;       /* Green color for the checkmark */
         margin-left: 8px;   /* Space between the document name and the checkmark */
     }
-    .success-message {
-        position: fixed; /* Fixed position to make it visible above all other content */
-        top: 20%; /* Position from the top of the viewport */
-        left: 50%; /* Centering from the left */
-        transform: translateX(-50%); /* Translate to perfectly center horizontally */
-        width: auto; /* Auto width based on content size */
-        max-width: 90%; /* Maximum width to ensure it doesn't span the entire width on larger screens */
-        padding: 20px; /* Padding around the text */
-        background-color: #4CAF50; /* Green background to signify success */
-        color: white; /* White text color */
-        text-align: center; /* Centered text */
-        border-radius: 8px; /* Rounded corners */
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Subtle shadow for 3D effect */
-        z-index: 1050; /* High z-index to ensure visibility above other elements */
-        animation: slideDown 0.5s ease-out forwards; /* Animation for sliding down */
-    }
-    
-    /* Keyframes for the slide-down animation */
-    @keyframes slideDown {
-        from {
-            top: 0; /* Start from top of the viewport */
-            opacity: 0; /* Start with no opacity */
-        }
-        to {
-            top: 20%; /* End at final position */
-            opacity: 1; /* Fully visible */
-        }
-    }
-}
-
-.myview {
-    margin-right: 20px;
 }

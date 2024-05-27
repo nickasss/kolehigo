@@ -4,20 +4,23 @@
   /* Add this to your Colleges.scss file */
 }
 .Grid0 .VerticalContainer {
-  background-image: linear-gradient(rgb(102, 37, 73), rgb(102, 37, 73), rgb(102, 37, 73));
-  width: 160px;
+  background-image: linear-gradient(rgb(102, 37, 73), rgb(73, 0, 94), rgb(29, 26, 57));
+  width: 110px;
   height: 1000px;
   position: fixed;
 }
+.Grid0 .VerticalContainer .Koheligo {
+  margin-left: 5px;
+}
 .Grid0 .VerticalContainer img {
-  width: 150px;
-  height: 150px;
-  margin-left: 10px;
+  width: 100px;
+  height: 110px;
+  position: relative;
   margin-top: 20px;
 }
 .Grid0 .VerticalContainer button {
   font-size: medium;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(144, 38, 112, 0);
 }
 .Grid0 .VerticalContainer button:hover {
   background-color: rgb(217, 217, 217);
@@ -35,20 +38,21 @@
   padding-bottom: 10px;
 }
 .Grid0 .VerticalContainer .Profile {
-  background-color: rgba(255, 255, 255, 0);
-  margin-top: 26px;
+  background-color: rgba(144, 38, 112, 0);
+  color: rgb(217, 217, 217);
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
-  color: rgb(217, 217, 217);
+  font-size: 15px;
 }
 .Grid0 .VerticalContainer .Profile img {
-  filter: invert(100%);
-  margin-right: 11px;
+  margin-right: 0px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
+  filter: invert(100%);
+  cursor: pointer;
 }
 .Grid0 .VerticalContainer .Colleges {
   padding-top: 10px;
@@ -57,14 +61,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 .Grid0 .VerticalContainer .Colleges img {
-  filter: brightness(0);
-  margin-right: 11px;
+  margin-right: 0px;
   margin-bottom: -10px;
   width: 60px;
   height: 81px;
+  filter: brightness(0);
+  cursor: pointer;
 }
 .Grid0 .VerticalContainer .Scholarships {
   padding-top: 10px;
@@ -73,7 +78,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 20px;
+  font-size: 15px;
 }
 .Grid0 .VerticalContainer .Scholarships img {
   margin-right: 11px;
@@ -86,7 +91,7 @@
      object-fit: contain;
 }
 .Grid0 .VerticalContainer .Notifications {
-  margin-left: 38px;
+  margin-left: 10px;
   border: none;
   position: absolute;
   color: white;
@@ -106,8 +111,8 @@
 }
 .Grid0 .VerticalContainer .Logout {
   border: none;
-  margin-left: 50px;
-  margin-top: 60px;
+  margin-left: 30px;
+  margin-top: 80px;
   position: absolute;
   color: white;
   display: flex;
@@ -124,10 +129,51 @@
   color: rgba(211, 211, 211, 0.566);
   background-color: rgba(155, 97, 22, 0);
 }
+.Grid0 .VerticalContainer .Notifications:hover img,
+.Grid0 .VerticalContainer .Logout:hover img {
+  filter: invert(30%);
+}
+.Grid0 .VerticalContainer .notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Grid0 .VerticalContainer .notification-overlay .notification-content {
+  height: 500px;
+  width: 1000px;
+  background-color: rgba(0, 0, 0, 0.448);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: aliceblue;
+}
+.Grid0 .VerticalContainer .notification-overlay .notification-content h2 {
+  margin-bottom: 10px;
+}
+.Grid0 .VerticalContainer .notification-overlay .notification-content button {
+  margin-top: 360px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #eeeeee;
+  color: rgb(3, 3, 3);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.Grid0 .VerticalContainer .notification-overlay .notification-content button:hover {
+  background-color: rgba(255, 255, 255, 0.4235294118);
+}
 .Grid0 .HorizontalContainer {
   background-image: linear-gradient(rgb(73, 0, 94), rgb(102, 37, 73), rgb(102, 37, 73));
   margin-left: 160px;
   position: absolute;
+  margin-left: 110px;
 }
 .Grid0 .HorizontalContainer .kolehigo {
   height: 70px;
@@ -177,10 +223,10 @@
   position: absolute;
 }
 .Grid0 .HorizontalContainer1 {
-  width: 1367px;
+  width: 1418px;
   height: 170px;
   background-color: rgb(217, 217, 217);
-  margin-left: 160px;
+  margin-left: 110px;
   margin-top: 243px;
   position: absolute;
   overflow-x: auto; /* Enable horizontal scrolling */
@@ -274,8 +320,8 @@
   background-color: rgb(217, 217, 217);
   position: absolute;
   margin-top: 412px;
-  margin-left: 160px;
-  width: 1367px;
+  margin-left: 110px;
+  width: 1418px;
   height: 328px;
   overflow-x: hidden;
   overflow-y: auto;
