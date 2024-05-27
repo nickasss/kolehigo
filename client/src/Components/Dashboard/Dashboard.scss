@@ -11,13 +11,8 @@
         position: fixed;
         
         img{
-<<<<<<< HEAD
             width: 100px;
             height: 100px;
-=======
-            width: 150px;
-            height: 150px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             margin-left: 10px;
             margin-top: 20px;
         }
@@ -28,11 +23,7 @@
         }
         
         button:hover {
-<<<<<<< HEAD
-            background-color:rgba(217, 217, 217, 0.993);
-=======
-            background-color:rgb(217 217 217);
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
+            // background-color:rgba(217, 217, 217, 0.993);
             color: black;
         
             img {
@@ -42,26 +33,17 @@
         }
         .Profile, .Colleges, .Scholarships {
             width: 100%;
-<<<<<<< HEAD
-            background-color: rgba(217, 217, 217, 0.925);
-=======
-            background-color: rgb(217 217 217);
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             border: none;
             cursor: pointer;
             padding-bottom: 10px;
         }
         
         .Profile {
-            margin-top: 26px;
+            margin-top: 2px;
             display: flex;
             flex-direction: column;
             align-items: center;
-<<<<<<< HEAD
             font-size: 14px;
-=======
-            font-size: 20px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
     
             img {
                 margin-right: 11px;
@@ -73,17 +55,13 @@
         }
     
         .Colleges {
-            padding-top: 10px;
+            padding-top: 2px;
             background-color: rgba(144, 38, 112, 0); 
             color: rgb(217 217 217);
             display: flex;
             flex-direction: column;
             align-items: center;
-<<<<<<< HEAD
             font-size: 14px;
-=======
-            font-size: 20px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
     
             img {
                 margin-right: 11px;
@@ -95,17 +73,13 @@
     
     
         .Scholarships {
-            padding-top: 10px;
+            padding-top: 2px;
             background-color: rgba(144, 38, 112, 0);
             color: rgb(217 217 217);
             display: flex;
             flex-direction: column;
             align-items: center;
-<<<<<<< HEAD
             font-size: 14px;
-=======
-            font-size: 20px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
@@ -128,6 +102,7 @@
             align-items: center;
             img{
                 margin-left: 2px;
+                margin-bottom: 2px;
                 width: 50px;
                 height: 40px;
             }
@@ -139,29 +114,21 @@
         .Logout{
             border: none;
             margin-left: 50px;
-            margin-top: 60px;
+            margin-top: 85px;
             position: absolute;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
-<<<<<<< HEAD
             font-size: 12px;
             img{ 
                 margin-right: 10px;
-                width: 25px;
-                height: 25px;
-=======
-            font-size: 13px;
-            img{ 
-                margin-right: 10px;
-                width: 30px;
-                height: 30px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
+                width: 20px;
+                height: 20px;
             }
 
             &:hover {
-                color: rgba(211, 211, 211, 0.566);
+                color: rgba(253, 253, 253, 0.697);
                 background-color: rgba(155, 97, 22, 0)
               }
         }
@@ -183,11 +150,7 @@
           
             .notification-content {
                 height: 500px;
-<<<<<<< HEAD
-                width: 00px;
-=======
-                width: 1000px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
+                width: 500px;
                 background-color: rgba(0, 0, 0, 0.448);
                 padding: 20px;
                 border-radius: 5px;
@@ -220,13 +183,8 @@
     .HorizontalContainer {
         background-color: rgb(217 217 217);
         padding: 10px;
-<<<<<<< HEAD
         width: 1368px; 
         height: 260px;
-=======
-        width: 1367px; 
-        height: 360px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
         margin-left: 160px; 
         border-top-left-radius: 25px; 
         border-top-right-radius: 25px;
@@ -281,36 +239,22 @@
         .NameDis{
             display: flex;
             margin-top: 20px;
-<<<<<<< HEAD
             margin-left: 80px;
-=======
-            margin-left: 130px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             h1{
                 margin-top: 40px;
                 margin-left: 40px;
                 font-size: 35px;
                 font-weight: 600;
                 p {
-<<<<<<< HEAD
                     font-weight: 400;
                     font-size: 25px;
                 
-=======
-                    font-weight: 300;
-                    font-size: 30px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
                 }
             }
             
             img{
-<<<<<<< HEAD
                 height: 150px;
                 width: 150px;
-=======
-                height: 170px;
-                width: 170px;
->>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             }
         }
     }
