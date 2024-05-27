@@ -10,9 +10,15 @@
         position: fixed;
         
         img{
+<<<<<<< HEAD
             width: 100px;
             height: 100px;
             margin-left: 20px;
+=======
+            width: 150px;
+            height: 150px;
+            margin-left: 10px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             margin-top: 20px;
         }
     
@@ -44,7 +50,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+<<<<<<< HEAD
             font-size: 14px;
+=======
+            font-size: 20px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             color: rgb(217 217 217);
     
             img {
@@ -59,13 +69,21 @@
         
     
         .Colleges {
+<<<<<<< HEAD
             padding-top: 2px;
+=======
+            padding-top: 10px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             background-color: rgba(217, 217, 217, 0);
             color: rgb(255, 255, 255);
             display: flex;
             flex-direction: column;
             align-items: center;
+<<<<<<< HEAD
             font-size: 14px;
+=======
+            font-size: 20px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
     
             img {
                 filter: brightness(1); 
@@ -78,15 +96,25 @@
     
     
         .Scholarships {
+<<<<<<< HEAD
             padding-top: 2px;
+=======
+            padding-top: 10px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
             background-color: rgb(217 217 217); 
             color: rgb(0, 0, 0);
             display: flex;
             flex-direction: column;
             align-items: center;
+<<<<<<< HEAD
             font-size: 14px;
             img {
                 filter: brightness(1); 
+=======
+            font-size: 20px;
+            img {
+                filter: brightness(0); 
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
                 margin-right: 11px;
                 margin-bottom: -10px; 
                 width: 58px;
@@ -125,9 +153,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+<<<<<<< HEAD
             font-size: 12px;
             img{ 
                 margin-right: 2px;
+=======
+            font-size: 13px;
+            img{ 
+                margin-right: 10px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
                 width: 30px;
                 height: 30px;
             }
@@ -155,7 +189,11 @@
           
             .notification-content {
                 height: 500px;
+<<<<<<< HEAD
                 width: 500px;
+=======
+                width: 1000px;
+>>>>>>> 58ec6b4ecef1e2116d5dcb7773cad3d296d18a2e
                 background-color: rgba(0, 0, 0, 0.448);
                 padding: 20px;
                 border-radius: 5px;

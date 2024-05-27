@@ -1,0 +1,493 @@
+//DASHBOARD WITH DEFAULT PROFILE
+
+.Grid2 {
+    background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94));
+    
+    //vertical container
+    .VerticalContainer {
+        background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94), rgb(29 26 57));
+        width: 160px;
+        height: 1000px; 
+        position: fixed;
+        
+        
+        img{
+            width: 150px;
+            height: 150px;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+    
+        button {
+            font-size: medium;
+            background-color: rgba(144, 38, 112, 0);
+        }
+        
+        button:hover {
+            background-color:rgb(217 217 217);
+            color: black;
+        
+            img {
+                filter: brightness(0); 
+                cursor: pointer; 
+            }
+        }
+        .Profile, .Colleges, .Scholarships {
+            width: 100%;
+            background-color: rgb(217 217 217);
+            border: none;
+            cursor: pointer;
+            padding-bottom: 10px;
+        }
+        
+        .Profile {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+    
+            img {
+                margin-right: 11px;
+                margin-bottom: -10px; 
+                width: 60px;
+                height: 81px;
+            }
+    
+        }
+    
+        .Colleges {
+            padding-top: 10px;
+            background-color: rgba(144, 38, 112, 0); 
+            color: rgb(217 217 217);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+    
+            img {
+                margin-right: 11px;
+                margin-bottom: -10px; 
+                width: 60px;
+                height: 81px;
+            }
+        }
+    
+    
+        .Scholarships {
+            padding-top: 10px;
+            background-color: rgba(144, 38, 112, 0);
+            color: rgb(217 217 217);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+            img {
+                margin-right: 11px;
+                margin-bottom: -10px; 
+                width: 60px;
+                height: 81px;
+            }
+        }
+    
+        img {
+            object-fit: contain; 
+        }
+        .Notifications{
+            margin-left: 38px;
+            border: none;
+            position: absolute;
+            color: white;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin-left: 2px;
+                width: 50px;
+                height: 40px;
+            }
+            &:hover {
+                color: rgba(253, 253, 253, 0.697);
+                background-color: rgba(155, 97, 22, 0)
+              }
+        }
+        .Logout{
+            border: none;
+            margin-left: 50px;
+            margin-top: 60px;
+            position: absolute;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 13px;
+            img{ 
+                margin-right: 10px;
+                width: 30px;
+                height: 30px;
+            }
+
+            &:hover {
+                color: rgba(211, 211, 211, 0.566);
+                background-color: rgba(155, 97, 22, 0)
+              }
+        }
+
+        .Notifications:hover img,
+        .Logout:hover img {
+          filter: invert(30%); // Invert back to original color on hover
+        }
+        .notification-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            .notification-content {
+                height: 500px;
+                width: 1000px;
+                background-color: rgba(0, 0, 0, 0.448);
+                padding: 20px;
+                border-radius: 5px;
+                text-align: center;
+                color: aliceblue;
+          
+              h2 {
+                margin-bottom: 10px;
+              }
+          
+              button {
+                margin-top: 360px;
+                padding: 8px 20px;
+                border: none;
+                background-color: #eeeeee; // Example color, adjust as needed
+                color: rgb(3, 3, 3);
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+          
+                &:hover {
+                  background-color: #ffffff6c; // Example color, adjust as needed
+                }
+              }
+            }
+        }
+    }
+    
+    
+    //HorizontalContainer
+    .HorizontalContainer {
+        background-color: rgb(217 217 217);
+        padding: 10px;
+        width: 1546px; 
+        height: 360px;
+        margin-left: 160px; 
+        border-top-left-radius: 25px; 
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 15px; 
+        border-bottom-right-radius: 15px;
+        
+        .MiniTabs{
+            margin-top: 20px;
+            margin-left: 70px;
+        
+        
+            button{
+                background-color: rgba(255, 0, 0, 0);
+                font-size: 18px;
+                font-weight:500;
+                border: 0px;
+                margin-left: 35px;
+                cursor: pointer;
+                
+                
+                &:hover{
+                    color: rgba(0, 0, 0, 0.388);
+                }
+            }
+        }
+       
+        .MyColleges {
+            text-decoration: underline;
+            text-decoration-color: rgb(69 25 82);
+        }
+    
+        button.MyColleges{
+            &:hover{
+                color: rgb(0, 0, 0);
+            }
+        }
+    
+        .ProfilePrompt{
+            margin-top: 30px;
+            margin-left: 110px;
+            
+            h1{
+                font-size: 30px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 20px;
+                margin-left: 50px;
+            }
+        }
+    
+        .NameDis{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 130px;
+            h1{
+                margin-top: 40px;
+                margin-left: 40px;
+                font-size: 40px;
+                font-weight: 500;
+                p {
+                    font-weight: 300;
+                    font-size: 30px;
+                }
+            }
+            
+            img{
+                height: 170px;
+                width: 170px;
+            }
+        }
+    }
+
+    .HorizontalContainerBOTTOM{
+        overflow-y: auto; 
+        margin-top: 10px;
+        background-color: rgb(217 217 217);
+        padding: 10px;
+        width: 1546px; 
+        height: 411px;
+        margin-left: 160px; 
+        border-top-left-radius: 25px; 
+        border-top-right-radius: 25px;
+
+
+
+        .mycollege-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; // This will ensure the items are spaced evenly
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 40px; // Rounded corners for each college item
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 6px 2px rgba(0, 0, 0, 0.23); // Soft, spread shadow
+            width: 100%;
+            height: 150px;
+            max-width: 1200px;
+            margin-top: 20px;
+            margin-left: 140px;
+            overflow: hidden; // Ensures content does not overflow the item's bounds
+            min-height: 150px; // Minimum height for each college item
+        }
+        
+        .mycollege-logo {
+            flex-shrink: 0; 
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        
+        .mycollege-details {
+            margin-top: 1px;
+            flex-grow: 1;
+            padding-right: 10px; // Space between text and buttons
+            
+            h5 {
+                position: absolute;
+                margin-top: 10px;
+                font-size: 20px;
+                margin-bottom: 5px;
+
+            }
+    
+            p {
+                position: absolute;
+                margin-top: 35px;
+                font-size: 15px;
+            }
+        }
+        
+        .mybuttons-container {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-shrink: 0; // Prevents the buttons from shrinking
+            margin-right: 30px;
+        }
+    
+        .myadd-to-colleges,
+        .myview {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+          font-weight: bold;
+          white-space: nowrap; // Keep the text of the buttons on a single line
+          margin-right: 5px;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+        .Status{
+        margin-left: 20px;
+        margin-top: 60px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: bold;
+        white-space: nowrap; // Keep the text of the buttons on a single line
+        margin-right: 5px;
+        &:hover {
+          opacity: 0.8;
+            }
+        }
+        .myview {
+            margin-left: 700px;
+            background-color: rgb(69, 25, 82); // Color of the button
+            color: white; // Text color of the button
+            margin-bottom: 4.5rem;
+        }
+        .Status{
+            background-color: rgb(15, 142, 53); // Color of the button
+            color: white; // Text color of the button
+            margin-bottom: 4.5rem;
+        }
+    }
+
+    .modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Modal Content Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s;
+    }
+
+    /* Add Animation */
+    @keyframes animatetop {
+        from {top: -300px; opacity: 0}
+        to {top: 0; opacity: 1}
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Course display styling */
+    .display-course {
+        position: relative;
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 4px;
+    }
+    .form{
+        position: relative;
+        background: #f4f4f4;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 4px; 
+    }
+    .submit-button{
+        position: absolute; // Positioning relative to the nearest positioned ancestor
+        left: 2; // Align to the leftmost part
+        top: 90px;
+        padding: 8px;
+        background-color: rgb(152, 93, 170);
+        border-radius: 10px;
+        height: 30px;
+        font-weight: bold; // Changed from 10px, as 'font-weight' does not use px units
+    }
+    .apply-button {
+        position: absolute; // Positioning relative to the nearest positioned ancestor
+        right: 0; // Align to the leftmost part
+        top: 2px;
+        padding: 8px;
+        background-color: rgb(152, 93, 170);
+        border-radius: 10px;
+        height: 30px;
+        font-weight: bold; // Changed from 10px, as 'font-weight' does not use px units
+    }
+    .container_submission{
+        position: relative;
+        padding: 10px;
+        background-color: gray;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .checkmark {
+        color: green;       /* Green color for the checkmark */
+        margin-left: 8px;   /* Space between the document name and the checkmark */
+    }
+    .success-message {
+        position: fixed; /* Fixed position to make it visible above all other content */
+        top: 20%; /* Position from the top of the viewport */
+        left: 50%; /* Centering from the left */
+        transform: translateX(-50%); /* Translate to perfectly center horizontally */
+        width: auto; /* Auto width based on content size */
+        max-width: 90%; /* Maximum width to ensure it doesn't span the entire width on larger screens */
+        padding: 20px; /* Padding around the text */
+        background-color: #4CAF50; /* Green background to signify success */
+        color: white; /* White text color */
+        text-align: center; /* Centered text */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Subtle shadow for 3D effect */
+        z-index: 1050; /* High z-index to ensure visibility above other elements */
+        animation: slideDown 0.5s ease-out forwards; /* Animation for sliding down */
+    }
+    
+    /* Keyframes for the slide-down animation */
+    @keyframes slideDown {
+        from {
+            top: 0; /* Start from top of the viewport */
+            opacity: 0; /* Start with no opacity */
+        }
+        to {
+            top: 20%; /* End at final position */
+            opacity: 1; /* Fully visible */
+        }
+    }
+}
