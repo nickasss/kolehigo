@@ -1,5 +1,6 @@
 .Grid0 {
-  background-image: linear-gradient(rgb(102 37 73),rgb(73 0 94));
+  background-image: linear-gradient(rgb(119, 35, 81),rgb(73 0 94));
+  
   
 
   //vertical container
@@ -10,9 +11,9 @@
       position: fixed;
       
       img{
-          width: 150px;
-          height: 150px;
-          margin-left: 10px;
+          width: 100px;
+          height: 100px;
+          margin-left: 20px;
           margin-top: 20px;
       }
   
@@ -22,7 +23,7 @@
       }
       
       button:hover {
-          background-color:rgb(217 217 217);
+          // background-color:rgb(217 217 217);
           color: black;
       
           img {
@@ -32,7 +33,6 @@
       }
       .Profile, .Colleges, .Scholarships {
           width: 100%;
-          background-color: rgb(217 217 217);
           border: none;
           cursor: pointer;
           padding-bottom: 10px;
@@ -40,55 +40,54 @@
       
       .Profile {
           background-color: rgba(255, 255, 255, 0);
-          margin-top: 26px;
+          margin-top: 2px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: 20px;
+          font-size: 14px;
           color: rgb(217 217 217);
   
           img {
               filter: invert(100%);
               margin-right: 11px;
               margin-bottom: -10px; 
-              width: 60px;
-              height: 81px;
+              width: 58px;
+              height: 80px;
           }
   
       }
   
       .Colleges {
-          padding-top: 10px;
-          background-color: rgb(217 217 217);
+          padding-top: 2px;
           color: rgb(0, 0, 0);
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: 20px;
+          font-size: 14px;
   
           img {
               filter: brightness(0); 
               margin-right: 11px;
               margin-bottom: -10px; 
-              width: 60px;
-              height: 81px;
+              width: 58px;
+              height: 80px;
           }
       }
   
   
       .Scholarships {
-          padding-top: 10px;
+          padding-top: 2px;
           background-color: rgba(144, 38, 112, 0);
           color: rgb(217 217 217);
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: 20px;
+          font-size: 14px;
           img {
               margin-right: 11px;
               margin-bottom: -10px; 
-              width: 60px;
-              height: 81px;
+              width: 58px;
+              height: 80px;
           }
       }
   
@@ -106,6 +105,7 @@
         align-items: center;
         img{
             margin-left: 2px;
+            margin-bottom: 2px;
             width: 50px;
             height: 40px;
         }
@@ -117,19 +117,18 @@
     .Logout{
         border: none;
         margin-left: 50px;
-        margin-top: 60px;
+        margin-top: 85px;
         position: absolute;
         color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-size: 13px;
+        font-size: 12px;
         img{ 
-            margin-right: 10px;
-            width: 30px;
-            height: 30px;
+            margin-right: 20px;
+            width: 20px;
+            height: 20px;
         }
-
         &:hover {
             color: rgba(211, 211, 211, 0.566);
             background-color: rgba(155, 97, 22, 0)
@@ -163,16 +162,18 @@
       h1{
           margin-left: 170px;
           color: white;
-          font-weight: 600;
+          font-weight: 700;
           margin-bottom: 10px;
-          font-size: 35px;
+          font-size: 30px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
       }
       .search-bar{
           height: 45px;
           width: 800px;
           border-radius: 25px;
           padding-left: 40px;
-          font-size: 18px;
+          font-size: 17px;
+          font-family: 'Courier New', Courier, monospace;
       }
 
       .search-button{
@@ -181,15 +182,17 @@
           position: absolute;
           margin-left: 730px;
           border-radius: 25px;
-          margin-top: 9px;
-          padding-left: 5px;
-          padding-right: 5px;
-          padding-top: 3px;
-          padding-bottom: 3px;
+          margin-top: 8px;
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          font-family:'Century Gothic', sans-serif;
+
       }
 
       .Search-img{
-          margin-left: 15px;
+          margin-left: 18px;
           margin-top: 12px;
           position: absolute;
       }
@@ -210,10 +213,11 @@
       
 
       h6 {
-          font-weight: 600;
+          font-weight: 500;
           margin-top: 10px;
           margin-left: 40px;
           font-size: 25px;
+          font-family: "Perpetua", serif;
       }
 
       .Promoted-colleges{
@@ -508,20 +512,23 @@
       flex-direction: column;  /* Stacks children vertically */
       align-items: center;     /* Centers children horizontally */
       justify-content: center; /* Centers children vertically */
-      padding: 20px;           /* Adds some padding around the content */
+      padding: 10px;           /* Adds some padding around the content */
       width: 200px;
-      background-color: gray;      /* Extra space on top */
+      background-color: whitesmoke;      /* Extra space on top */
       border-radius: 10px;
+      
   }
   
   .label-container > div {
       margin: 10px; /* Adds space between the rows of checkboxes */
+      margin-left: 2px;
   }
   
   .button-container {
       display: flex;
       justify-content: center; /* Center the button horizontally */
-      margin-top: 10px; /* Space above the button */
+      margin-top: 20px; /* Space above the button */
+      
   }
   .toggle-filters-button {
       background-color: #451952; /* Purple background */
@@ -535,6 +542,7 @@
       display: flex;
       width: 100px;
       font-size: 12px;
+      font-family:'Century Gothic', sans-serif;
   }
   
   .toggle-filters-button:hover {
@@ -551,6 +559,7 @@
       cursor: pointer;           /* Cursor indicates it's clickable */
       margin-top: 10px;          /* Space above the button */
       transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      font-family:'Century Gothic', sans-serif;
   }
   
   .Apply-filters:hover {

@@ -88,7 +88,7 @@ const Login = () => {
                     <div className="footerDiv flex">
                         <span className="text">Don't have an account?</span>
                         <Link to={'/register'}>
-                            <button className='btn'>Sign Up</button>
+                            <button className='btn'>Sign Up </button>
                         </Link>
                     </div>
                     <div className="btn-container">
@@ -131,7 +131,7 @@ const Login = () => {
                         </div>
                         <button type='submit' className='btn flex' onClick={loginUser}>
                             <span>Login</span>
-                            <AiOutlineSwapRight className='icon' />
+                            {/* <AiOutlineSwapRight className='icon' /> */}
                         </button>
                         <span className='forgotPassword'>
                             Forgot your password? <a href=''>Click Here!</a>

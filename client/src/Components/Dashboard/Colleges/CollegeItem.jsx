@@ -29,6 +29,7 @@ const CollegeItem = ({ college, onAddCollege }) => {
                 <button 
                     className={isAdded ? "added-to-colleges" : "add-to-colleges"}
                     onClick={handleClick}
+                    disabled={isAdded} // Disable button when college is already added
                 >
                     {isAdded ? "College Added" : "Add to Colleges"}
                 </button>

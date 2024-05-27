@@ -11,8 +11,8 @@
         position: fixed;
         
         img{
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             margin-left: 10px;
             margin-top: 20px;
         }
@@ -23,7 +23,7 @@
         }
         
         button:hover {
-            background-color:rgb(217 217 217);
+            // background-color:rgba(217, 217, 217, 0.993);
             color: black;
         
             img {
@@ -33,59 +33,58 @@
         }
         .Profile, .Colleges, .Scholarships {
             width: 100%;
-            background-color: rgb(217 217 217);
             border: none;
             cursor: pointer;
             padding-bottom: 10px;
         }
         
         .Profile {
-            margin-top: 26px;
+            margin-top: 2px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 14px;
     
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
-                width: 60px;
-                height: 81px;
+                width: 58px;
+                height: 80px;
             }
     
         }
     
         .Colleges {
-            padding-top: 10px;
+            padding-top: 2px;
             background-color: rgba(144, 38, 112, 0); 
             color: rgb(217 217 217);
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 14px;
     
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
-                width: 60px;
-                height: 81px;
+                width: 58px;
+                height: 80px;
             }
         }
     
     
         .Scholarships {
-            padding-top: 10px;
+            padding-top: 2px;
             background-color: rgba(144, 38, 112, 0);
             color: rgb(217 217 217);
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 20px;
+            font-size: 14px;
             img {
                 margin-right: 11px;
                 margin-bottom: -10px; 
-                width: 60px;
-                height: 81px;
+                width: 58px;
+                height: 80px;
             }
         }
     
@@ -103,6 +102,7 @@
             align-items: center;
             img{
                 margin-left: 2px;
+                margin-bottom: 2px;
                 width: 50px;
                 height: 40px;
             }
@@ -114,21 +114,21 @@
         .Logout{
             border: none;
             margin-left: 50px;
-            margin-top: 60px;
+            margin-top: 85px;
             position: absolute;
             color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
-            font-size: 13px;
+            font-size: 12px;
             img{ 
                 margin-right: 10px;
-                width: 30px;
-                height: 30px;
+                width: 20px;
+                height: 20px;
             }
 
             &:hover {
-                color: rgba(211, 211, 211, 0.566);
+                color: rgba(253, 253, 253, 0.697);
                 background-color: rgba(155, 97, 22, 0)
               }
         }
@@ -150,7 +150,7 @@
           
             .notification-content {
                 height: 500px;
-                width: 1000px;
+                width: 500px;
                 background-color: rgba(0, 0, 0, 0.448);
                 padding: 20px;
                 border-radius: 5px;
@@ -183,8 +183,8 @@
     .HorizontalContainer {
         background-color: rgb(217 217 217);
         padding: 10px;
-        width: 1367px; 
-        height: 360px;
+        width: 1368px; 
+        height: 260px;
         margin-left: 160px; 
         border-top-left-radius: 25px; 
         border-top-right-radius: 25px;
@@ -193,20 +193,20 @@
         
         .MiniTabs{
             margin-top: 20px;
-            margin-left: 70px;
+            margin-left: 60px;
         
         
             button{
                 background-color: rgba(255, 0, 0, 0);
-                font-size: 18px;
-                font-weight:500;
+                font-size: 15px;
+                font-weight:550;
                 border: 0px;
                 margin-left: 35px;
                 cursor: pointer;
                 
                 
                 &:hover{
-                    color: rgba(0, 0, 0, 0.388);
+                    color: rgba(73, 5, 71, 0.388);
                 }
             }
         }
@@ -223,15 +223,15 @@
         }
     
         .ProfilePrompt{
-            margin-top: 30px;
-            margin-left: 110px;
+            margin-top: 58px;
+            margin-left: 80px;
             
             h1{
-                font-size: 30px;
-                font-weight: 500;
+                font-size: 15px;
+                font-weight: 600;
             }
             p {
-                font-size: 20px;
+                font-size: 14px;
                 margin-left: 50px;
             }
         }
@@ -239,21 +239,22 @@
         .NameDis{
             display: flex;
             margin-top: 20px;
-            margin-left: 130px;
+            margin-left: 80px;
             h1{
                 margin-top: 40px;
                 margin-left: 40px;
-                font-size: 40px;
-                font-weight: 500;
+                font-size: 35px;
+                font-weight: 600;
                 p {
-                    font-weight: 300;
-                    font-size: 30px;
+                    font-weight: 400;
+                    font-size: 25px;
+                
                 }
             }
             
             img{
-                height: 170px;
-                width: 170px;
+                height: 150px;
+                width: 150px;
             }
         }
     }
@@ -276,27 +277,33 @@
          
          
         #FirstName, #MiddleName, #LastName, #Suffix{
-            width: 600px;
-            padding: 20px;
-            margin-top: 20px;
+            width: 500px;
+            padding: 18px;
+            margin-top: 29px;
             border: none;
-            border-radius: 20px;
-            font-size: 16px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        #Middlename, #LastName, #Suffix{
+            padding: 18px;
+            margin-top: 20px;
         }
     
+    
         #DateofBirth, #Address{
-            width: 600px;
-            padding: 20px;
+            width: 500px;
+            padding: 18px;
             margin-top: 20px;
             margin-right: 500px;
             margin-left: 50px;
             border: none;
             border-radius: 15px;
-            font-size: 16px;
+            font-size: 15px;
         }
         
         #DateofBirth {
-            width: 600px;
+            width: 500px;
             margin: 0;
             margin-left: 50px;
             font-weight: 300;
@@ -308,7 +315,7 @@
             position: absolute;
             margin-left: 70px;
             padding-left: 20px;
-            font-size: 17px;
+            font-size: 15px;
             margin-left: 50px;
             border-radius: 15px;
             font-family: "Montserrat", sans-serif;
